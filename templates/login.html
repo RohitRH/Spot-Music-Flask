@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block title %} VOTING IS EVERYONES'S RIGHT {% endblock %} {% block content %}
+<script lang="javascript">
+
+</script>
+<h1>Login</h1>
+
+<form action="/login" method="POST">
+    <p>
+        Username: <br> <input type="text" name="user" required> <br> 
+        Password: <br> <input type="Password" name="pw" required>
+    </p>
+    <small>{{ msg }}</small> <br>
+    <button type="submit">Login</button>
+</form>
+{% endblock %}
